@@ -6,7 +6,7 @@ const AllProductPage = () => {
     <div>
         {allProducts.map((elem,index) => 
         <div>
-            <img src={elem.imgURL} alt="nike air" />
+            <img src={elem.imgURL} alt="nike air" width={300} height={300} />
             <p>{elem.title}</p>
             <p>{elem.MRP}</p>
         </div>
