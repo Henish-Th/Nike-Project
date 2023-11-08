@@ -2,10 +2,10 @@ import { facebook, instagram, shieldTick, support, truckFast, twitter } from "..
 import { bigShoe1, bigShoe2, bigShoe3, customer1, customer2, shoe4, shoe5, shoe6, shoe7, thumbnailShoe1, thumbnailShoe2, thumbnailShoe3 } from "../assets/images";
 
 export const navLinks = [
-    { href: "#home", label: "Home" },
-    { href: "#about-us", label: "About Us" },
-    { href: "#products", label: "Products" },
-    { href: "#contact-us", label: "Contact Us" },
+    { href: "/NewAndFeatured", label: "New & Featured" },
+    { href: "/men", label: "Men" },
+    { href: "/women", label: "Women" },
+    { href: "/kids", label: "Kids" },
 ];
 
 export const shoes = [
@@ -167,7 +167,7 @@ export const allProducts = [
         MRP: '$650'
     },
     {
-        imgURL: 'images/nike airforce 1,07.webp',
+        imgURL: "images/nike airforce 1'07.webp",
         title: 'Nike Airforce 1,07',
         MRP: '$650'
     },

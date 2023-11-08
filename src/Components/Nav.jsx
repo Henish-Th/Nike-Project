@@ -6,7 +6,7 @@ import { hamburger } from "../assets/icons"
 
 const Nav = () => {
   return (
-    <header className="padding-l padding-r py-8 w-full fixed z-10" >
+    <header className="padding-l padding-r py-8 w-full bg-gray-100" >
       <nav className="flex justify-between items-center max-container ">
         <a href="/">
           <img src={headerLogo} alt="logo" />
@@ -14,11 +14,11 @@ const Nav = () => {
         <ul className=" flex-1 flex justify-center items-center gap-16 max-lg:hidden">
            {navLinks.map(elem => 
             <li key={elem.href}>
-              <a className='font-montserrat leading-normal text-lg text-slate-gray' href={elem.href}>{elem.label}</a>
+              <Link to={elem.href} className='font-montserrat leading-normal text-lg text-slate-gray'>{elem.label}</Link>
             </li>
             )}
         </ul>
-        <Link to="/allProducts" className="font-montserrat text-lg text-slate-gray">Explore</Link>
+        <Link to="/signin" className="font-montserrat text-lg text-slate-gray">Sign in / Explore</Link>
         <div className="hidden max-lg:block">
           <img src={hamburger} alt="hamburger" width={25} height={25} />
         </div>
